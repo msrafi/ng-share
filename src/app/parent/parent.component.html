@@ -1,0 +1,8 @@
+<div style="border: 2px solid #f90; padding: 10px;">
+    <p>parent works!</p>
+<p>Message from Child: {{message1}}</p>
+
+    <app-child [message]="parentMessage" (messageEvent)="receiveMessage($event)"></app-child>
+    <p>From anywhere: Says {{message2}}</p>
+    <button (click)="somehere()">Change here as welll</button>
+</div>
